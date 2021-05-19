@@ -1,0 +1,37 @@
+@import 'material-dashboard-rtl';
+
+* {
+  direction: rtl;
+}
+.md-field label {
+  right: 0;
+  text-align: right;
+  left: auto;
+}
+.md-table-head-container {
+  text-align: right;
+
+  .md-table-head {
+    text-align: right;
+    direction: rtl;
+  }
+
+  .md-table-head-label {
+    padding-right: 8px;
+    padding-left: 28px;
+  }
+}
+
+// logo title in navigation bar
+.sidebar .logo .simple-text.logo-normal {
+  padding-right: 50px;
+}
+
+// Dashboard.vue
+.md-tabs-container {
+  direction: ltr;
+}
+
+.form-check .form-check-input:checked + .form-check-sign .check:before {
+  left: 0;
+}
