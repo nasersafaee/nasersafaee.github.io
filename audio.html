@@ -2,6 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>گوش نواز های من</title>
     <link
       rel="stylesheet"
@@ -13,9 +15,30 @@
       @import url('https://v1.fontapi.ir/css/Yekan');
       * {
         font-family: 'Yekan', sans-serif;
+        text-align: center;
       }
       .main-container {
-        background-color: #d8e2dc;
+        background-color: #acddde;
+      }
+      .audio-container {
+        background-color: #caf1de;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100px;
+        border-radius: 50px;
+      }
+      audio::-webkit-media-controls-panel {
+        background-color: #acddde;
+      }
+
+      audio::-webkit-media-controls-play-button {
+        background-color: #acddde;
+        border-radius: 50%;
+      }
+
+      audio::-webkit-media-controls-play-button:hover {
+        background-color: #caf1de;
       }
     </style>
   </head>
@@ -23,18 +46,29 @@
     <div>
       <div class="container">
         <div class="text-right mt-5">
-          <div class="mb-3">کوه باش و دل نبند - او و دوستانش</div>
-          <div>
+          <div class="mb-4">کوه باش و دل نبند - او و دوستانش</div>
+          <div class="audio-container">
             <audio preload="none" controls>
               <source src="/musics/kooh-bash.mp3" type="audio/mpeg" />
             </audio>
           </div>
         </div>
-        <div class="text-right mt-5">
-          <div class="mb-3">شانه هایت - هایده</div>
-          <div>
+        <div class="text-right mt-4">
+          <div class="mb-4">شانه هایت - هایده</div>
+          <div class="audio-container">
             <audio preload="none" controls>
               <source src="/musics/Hayedeh-shanehayat.mp3" type="audio/mpeg" />
+            </audio>
+          </div>
+        </div>
+        <div class="text-right mt-4">
+          <div class="mb-4">آناتما - دریمینگ لایت</div>
+          <div class="audio-container">
+            <audio preload="none" controls>
+              <source
+                src="/musics/anathema-dreaming-light.mp3"
+                type="audio/mpeg"
+              />
             </audio>
           </div>
         </div>
